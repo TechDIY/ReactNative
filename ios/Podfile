@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ComponentsPractice' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ComponentsPractice
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+
+  target 'ComponentsPractice-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ComponentsPracticeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
