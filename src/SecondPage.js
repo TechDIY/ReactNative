@@ -70,16 +70,6 @@ const datas = [
             rightOpenValue={-75}
           />
 
-
-          <Fab
-            active={this.state.active}
-            containerStyle={{ }}
-            style={{ backgroundColor: '#5067FF',marginBottom:50 }}
-            position="bottomRight"
-            onPress={() => this.setState({ active: !this.state.active })}>
-            <Icon name="share" />
-          </Fab>
-
       </Container>
     );
   }

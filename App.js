@@ -23,12 +23,11 @@ import {
   CardImage 
 } from 'react-native-material-cards';
 
-import { 
-  Content} 
-  from 'native-base';
 
 import HomePage from './src/HomePage'
 import SecondPage from './src/SecondPage'
+import ThirdPage from './src/ThirdPage'
+
 
 
 type Props = {};
@@ -55,19 +54,28 @@ export default class App extends Component < Props > {
                 </HomePage>
               < /TabBarIOS.Item>
 
-              < TabBarIOS.Item systemIcon = "contacts"
+              < TabBarIOS.Item systemIcon = "search"
                 onPress = {() => { this.setState({ selectIndex: 1 }) } }
                 selected = { this.state.selectIndex == "1" } >
-                
+
                 <SecondPage>
                 </SecondPage>
               < /TabBarIOS.Item>
 
-              < TabBarIOS.Item systemIcon = "downloads"
+              < TabBarIOS.Item systemIcon = "top-rated"
                 onPress = {() => { this.setState({ selectIndex: 2 }) } }
                 selected = { this.state.selectIndex == "2" } >
+                
+                <ThirdPage>
+                </ThirdPage> 
+
+              < /TabBarIOS.Item>
+
+              < TabBarIOS.Item systemIcon = "more"
+                onPress = {() => { this.setState({ selectIndex: 3 }) } }
+                selected = { this.state.selectIndex == "3" } >
                 < View style = { styles.pageStyle } >
-                  < Text > Page - 3 < /Text> 
+                  < Text > Page - 4 < /Text> 
                 < /View>  
               < /TabBarIOS.Item>
 
